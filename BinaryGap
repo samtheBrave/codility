@@ -1,0 +1,26 @@
+class Solution {
+    public int solution(int N) {
+        
+        String str = Integer.toString(N, 2);
+        int count =0;
+        int greatest = 0;
+        //System.out.println(str);
+        for(int i =str.indexOf('1') ;i < str.length(); i++){
+     
+           if(str.charAt(i) == 48 ) {
+               
+               count = count +1;
+               } else {
+                   
+                   
+                    if (greatest < count ) {
+                        
+                        greatest = count ;
+                        
+                        }count = 0;
+                   }
+    
+        
+        } return greatest; // write your code in Java SE 8
+    }
+}
