@@ -28,6 +28,13 @@ class Solution {
     public int[] solution(int[] A, int K) {
         // write your code in Java SE 8
         int []B = new int[A.length];
+        
+        if(A.length ==1 ) {
+            
+            
+            return A;
+        } else {
+        
         for(int i =0; i<K;i++){
          
          for(int j=0; j<A.length;j++) {
@@ -45,7 +52,7 @@ class Solution {
              }
          A=B.clone();
             
-        }
+        } }
         return B;
     }
 }
